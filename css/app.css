@@ -42,6 +42,7 @@ a {
 .btn {
 	background: none;
 	color: #000;
+	cursor: pointer;
 	font-family: inherit;
 	font-size: 1.3rem;
 	font-weight: 600;
@@ -54,6 +55,7 @@ a {
 }
 .btn--blue {
 	background-color: #1a6eff;
+	color: #fff;
 }
 .btn-outline {
 	border: 1px solid #d8d8d8;
@@ -230,6 +232,7 @@ a {
 }
 .add__content {
 	padding-right: 7rem;
+	position: relative;
 }
 .add-text {
 	font-size: 2.5rem;
@@ -333,4 +336,106 @@ a {
 }
 .products-today {
 	margin-top: 10rem;
+}
+.newsletter {
+	margin-top: 10rem;
+}
+.newsletter__grid {
+	background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url(../img/newsletter-bg.png);
+	background-position: center center;
+	background-size: cover;
+	color: #fff;
+	height: 24.2rem;
+	padding: 0 10rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 6rem;
+	align-items: center;
+}
+.newsletter__heading {
+	font-size: 2.9rem;
+	font-weight: 400;
+	line-height: 3.8rem;
+}
+.newsletter__form {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	column-gap: 2rem;
+}
+.newsletter__form-input {
+	border: none;
+	border-radius: 2.5rem;
+	caret-color: #1a6eff;
+	font-family: inherit;
+	font-size: 1.6rem;
+	padding: 0.5rem 1.2rem;
+}
+.newsletter__form-input:focus {
+	outline: none;
+	border: 1px solid #1a6eff;
+}
+.footer {
+	margin-top: 10rem;
+	padding-bottom: 10rem;
+}
+.footer__grid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 10rem;
+	align-items: start;
+}
+.footer__contact-text {
+	font-size: 1.3rem;
+	line-height: 2;
+	max-width: 42rem;
+	margin: 3rem 0;
+}
+.social-nav {
+	display: grid;
+	grid-template-columns: repeat(5, 2rem);
+	column-gap: 3rem;
+}
+.social__link {
+	height: 2rem;
+	width: 2rem;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.social__link[href*='facebook'] {
+	background-image: url(../img/logo-facebook.svg);
+}
+.social__link[href*='twitter'] {
+	background-image: url(../img/logo-twitter.svg);
+}
+.social__link[href*='linkedin'] {
+	background-image: url(../img/logo-linkedin.svg);
+}
+.social__link[href*='instagram'] {
+	background-image: url(../img/logo-instagram.svg);
+}
+.social__link[href*='youtube'] {
+	background-image: url(../img/logo-youtube.svg);
+}
+.footer__navs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 8rem;
+}
+.footer__nav-holder h4 {
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin: 0 0 3.4rem;
+}
+.footer__nav-link {
+	color: #000;
+	display: block;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 2.9rem;
+	margin: 0;
 }
